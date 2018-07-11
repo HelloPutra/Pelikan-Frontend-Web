@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="<?= base_url('assets/'); ?>sites/pelikan.css">
 </head>
 <body>
+	<div id="home"></div>
 	<!-- BEGIN NAVIGATION -->
 	<div class="ui grid">
 		<!-- BEGIN COMPUTER ONLY MENU -->
@@ -21,7 +22,7 @@
 					<div class="item">
 						<img class="logo" src="<?= base_url('assets/'); ?>images/logo.png">
 					</div>
-					<a class="item nav-font">Pelikan</a>
+					<a href="#home" class="item nav-font">Pelikan</a>
 				</div>
 			</div>
 		</div>
