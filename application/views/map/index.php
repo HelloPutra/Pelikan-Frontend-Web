@@ -333,10 +333,10 @@
 											<p><i class="material-icons">time_to_leave</i></p>
 										</div>
 										<div class="eight wide computer right aligned column">
-											<p style="font-size: 50px; font-weight: bolder;">80%</p>
+											<p style="font-size: 50px; font-weight: bolder;">CO</p>
 										</div>
 										<div class="sixteen wide computer justify-pelikan column">
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, similique?
+											CO (karbon monoksida) tidaklah berwarna dan tidak berbau, bersifat racun, merupakan hasil pembakaran yang tidak sempurna dari bahan buangan mobil dan mesin letup
 										</div>
 									</div>
 								</div>
@@ -354,10 +354,10 @@
 											<p><i class="material-icons">time_to_leave</i></p>
 										</div>
 										<div class="eight wide computer right aligned column">
-											<p style="font-size: 50px; font-weight: bolder;">80%</p>
+											<p style="font-size: 50px; font-weight: bolder;">CO2</p>
 										</div>
 										<div class="sixteen wide computer justify-pelikan column">
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, similique?
+										 Karbon dioksida adalah senyawa kimia yang terdiri dari dua atom oksigen terikat kovalen dengan atom karbon. Berbentuk gas pada temperatur dan tekanan standar dan berada di atmosfer. Konsentrasi karbon dioksida di atmosfer bumi ± 387 pp
 										</div>
 									</div>
 								</div>
@@ -375,10 +375,10 @@
 											<p><i class="material-icons">time_to_leave</i></p>
 										</div>
 										<div class="eight wide computer right aligned column">
-											<p style="font-size: 50px; font-weight: bolder;">80%</p>
+											<p style="font-size: 50px; font-weight: bolder;">NO2</p>
 										</div>
 										<div class="sixteen wide computer justify-pelikan column">
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, similique?
+										NO2 bersifat racun terutama terhadap paru. Kadar NO2 yang lebih tinggi dari 100 ppm dapat mematikan sebagian besar binatang percobaan dan 90% dari kematian tersebut disebabkan oleh gejala pembengkakan paru (edema pulmonari).
 										</div>
 									</div>
 								</div>
@@ -388,6 +388,71 @@
 					</div>
 					
 					
+				</div>
+				<div class="row">
+					<div class="five wide computer sixteen wide phone column">
+						<div class="ui link cards">
+						  <div class="grey card">
+						    <div class="content">
+								<div class="ui grid">
+									<div class="row">
+										<div class="eight wide computer left aligned column">
+											<p><i class="material-icons">time_to_leave</i></p>
+										</div>
+										<div class="eight wide computer right aligned column">
+											<p style="font-size: 50px; font-weight: bolder;">CFC</p>
+										</div>
+										<div class="sixteen wide computer justify-pelikan column">
+										 Chloro Fluoro Carbon (CFC) adalah sejenis emisi yang dapat menyebabkan kerusakan lapisan ozon (lapisan pelindung bumi dari sinar ultraviolet). CFC juga disebut freon
+										</div>
+									</div>
+								</div>
+						    </div>
+						  </div>
+						</div>
+					</div>
+					<div class="five wide computer sixteen wide phone column">
+						<div class="ui link cards">
+						  <div class="grey card">
+						    <div class="content">
+								<div class="ui grid">
+									<div class="row">
+										<div class="eight wide computer left aligned column">
+											<p><i class="material-icons">time_to_leave</i></p>
+										</div>
+										<div class="eight wide computer right aligned column">
+											<p style="font-size: 50px; font-weight: bolder;">HC</p>
+										</div>
+										<div class="sixteen wide computer justify-pelikan column">
+										hidrokarbon adalah sebuah senyawa yang terdiri dari unsur atom karbon (C) dan atom hidrogen (H). Seluruh hidrokarbon memiliki rantai karbon dan atom-atom hidrogen yang berikatan dengan rantai tersebut
+										</div>
+									</div>
+								</div>
+						    </div>
+						  </div>
+						</div>
+					</div>
+					<div class="five wide computer sixteen wide phone column">
+						<div class="ui link cards">
+						  <div class="grey card">
+						    <div class="content">
+								<div class="ui grid">
+									<div class="row">
+										<div class="eight wide computer left aligned column">
+											<p><i class="material-icons">time_to_leave</i></p>
+										</div>
+										<div class="eight wide computer right aligned column">
+											<p style="font-size: 50px; font-weight: bolder;">Pb</p>
+										</div>
+										<div class="sixteen wide computer justify-pelikan column">
+										Timbal atau Timbel adalah suatu unsur kimia dalam tabel periodik yang memiliki lambang Pb dan nomor atom 82
+										</div>
+									</div>
+								</div>
+						    </div>
+						  </div>
+						</div>
+					</div>
 				</div>
 				<div class="padding-pelikan"></div>
 				<div class="row">
@@ -456,7 +521,7 @@ var chart = new CanvasJS.Chart("chartContainer", {
 	exportEnabled: true,
 	animationEnabled: true,
 	title: {
-		text: "Lorem Ipsum Dolor"
+		text: "Penyebaran Penyakit"
 	},
 	data: [{
 		type: "pie",
@@ -467,10 +532,10 @@ var chart = new CanvasJS.Chart("chartContainer", {
 		indexLabelFontSize: 10,
 		indexLabel: "{label} - {y}%",
 		dataPoints: [
-			{ y: 51.08, label: "Chrome" },
-			{ y: 27.34, label: "Internet Explorer" },
-			{ y: 10.62, label: "Firefox" },
-			{ y: 10.75, label: "Safari" }
+			{ y: 51.08, label: "Bronchitis kronika" },
+			{ y: 27.34, label: "Emphysema" },
+			{ y: 10.62, label: "Bronkopneumonia" },
+			{ y: 10.75, label: "Asma" }
 		]
 	}]
 });
