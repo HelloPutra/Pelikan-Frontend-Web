@@ -9,6 +9,7 @@
 	<title>Beranda &dash; Pelikan</title>
 	<link rel="stylesheet" href="<?= base_url('assets/') ?>semantic/semantic.min.css">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans|Sansita" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <style>
 	*{
@@ -20,14 +21,34 @@
         margin: 0;
         height: 100%;
     }
-    #nav-pelikan{
+    
+	
+	/* CSS Baru */
+
+	#nav-pelikan{
     	font-family: 'Sansita', sans-serif;
-    	background-color: #00b894;
-    	font-size: 40px;
+    	background-color: transparent;
+    	font-size: 25px;
+		border-bottom:0px;
+		box-shadow:none;
+		transition:0.3s ease-out;
     }
-    #nav-pelikan>a.item{
+	
+	#nav-pelikan_hijau{
+		font-family: 'Sansita', sans-serif;
+		background-color: #00b894;
+		font-size: 30px;
+		transition:0.5s ease-in-out;
+	}
+
+	/* CSS Baru */
+
+    #nav-pelikan > a.item{
     	color: #FFF;
     }
+	#nav-pelikan_hijau > a.item{
+		color:#fff;
+	}
     #mobile-nav{
     	font-family: 'Sansita', sans-serif;
     	background-color: #00b894;
@@ -39,13 +60,12 @@
 		display: none;
 	}
 	#hero{
-		margin-top: 100px;
-		margin-bottom: 100px;
+		margin-top: -30px;
 		background: url('assets/images/hero.jpg');
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
-		height: 500px;
+		height: 700px;
 		width: 100%;
 		display: table;
 	}
@@ -54,7 +74,7 @@
        vertical-align: middle;
     }
     .big-title{
-    	font-family: 'Sansita', sans-serif;
+    	font-family: 'Salted Mocha', sans-serif;
     	color: #FFF;
     	font-size: 100px;
     }
@@ -71,15 +91,6 @@
     	color: #FFF;
     	font-size: 20px;
     }
-    /* .section-one{
-    	background-color: #00cca4;
-    	padding-bottom: 80px;
-    	padding-top: 80px;
-    	background-size:cover;
-    		position:relative;
-    		z-index:-1;
-    		height:inherit;
-    } */
     .section-one{
     	background-color: #00cca4;
     	padding-bottom: 80px;
@@ -127,20 +138,6 @@
     	height: 150px;
     	font-size: 15px;
     }
-    /* #backshape .wrapper{
-    		transform:skew(0deg,-5deg);
-    		-ms-transform:skew(0deg,-10deg);
-    		-webkit-transform:skew(0deg,-5deg); 
-    }
-    #backshape{
-    	z-index:1;
-    	position: relative;
-    	margin-top:-100px;
-    	background:#FFF;
-    	transform:skew(0deg,5deg);
-    	-ms-transform:skew(0deg,10deg);
-    	-webkit-transform:skew(0deg,5deg);
-    } */
 	.map-responsive{
 	    overflow:hidden;
 	    padding-bottom:75%;
@@ -153,11 +150,6 @@
 	    width:100%;
 	    position:absolute;
 	}
-	/* .section-two{
-	    	background-color: #00cca4;
-	    	position: relative;
-	    	z-index: 2;
-	    } */
     .section-two{
     	background-color: #00cca4;
     }
@@ -168,13 +160,15 @@
     .dark-footer{
 		background-color: #00b894;
 	}
+	.material-icons{
+		font-size: 70px;
+	}
 </style>
-<body>
 <body>
 <div class="ui grid">
 	<div class="computer only row">
 		<div class="column">
-			<div class="ui borderless massive fixed menu" id="nav-pelikan">
+			<div class="ui borderless massive fixed menu navbar_coy" id="nav-pelikan">
 				<a class="item">Pelikan</a>
 			</div>
 		</div>
@@ -186,7 +180,7 @@
 				  	<a id="showmenu" class="item"><i class="content icon white"></i></a>
 				  	<a class="right item" id="aanavitem"><strong><h3>Pelikan</h3></strong></a>
 				  	<div class="item">
-						<img src="assets/images/image.png">
+						<img src="<?= base_url('assets/') ?>images/image.png">
 					</div>
 				</nav>
 			</div>
@@ -198,7 +192,7 @@
 					<table>
 						<tr>
 							<td>
-								<img class="ui mini image" src="assets/images/image.png">
+								<img class="ui mini image" src="<?= base_url('assets/') ?>images/image.png">
 							</td>
 							<td>
 								<span style="margin-left: 10px;">Pelikan</span>
@@ -216,11 +210,11 @@
 			</div>
 		</nav>
 		<!-- END MOBILE TABLET ONLY MENU -->
-</div>
-	<div class="ui container centered grid">
+	</div>
+	<div class="ui centered grid">
 		<div class="row">
 			<div class="sixteen wide computer sixteen wide phone center aligned column" id="hero">
-				<div class="valign-middle">
+				<div class="valign-middle" style="background-color: rgba(0,0,0,0.5);">
 					<div class="ui centered grid">
 						<div class="row">
 							<div class="eight wide computer sixteen wide phone center aligned column">
@@ -242,86 +236,80 @@
 			</div>
 		</div>
 	</div>
-	<!-- <div class="ui computer only grid">
-		<div class="sixteen wide computer column">
-			<div class="row"> -->
-				<div class="section-one">
-					<div class="ui container centered grid">
-						<div class="row">
-							<div class="sixteen wide computer sixteen wide phone center aligned column">
-								<div class="large-title">
-									<p>Kenapa harus pelikan ?</p>
-								</div>
-							</div>
-						</div>
-						<div class="padding-pelikan2"></div>
-						<div class="padding-pelikan"></div> 
-						<div class="row">
-							<div class="four wide computer sixteen wide phone column">
-								<div class="ui centered card" id="card-pelikan">
-									<div class="content">
-										<h2 class="ui center aligned icon header" style="color:white;">
-											<i class="map marker alternate icon"></i>
-											Dapatkan Lokasi
-										</h2>
-										<br>
-										<div class="extra content" style="text-align:center;">
-											<button class="ui inverted basic button">Selengkapnya</button>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="four wide computer sixteen wide phone column">
-								<div class="ui centered card" id="card-pelikan">
-									<div class="content">
-										<h2 class="ui center aligned icon header" style="color:white;">
-											<i class="user md icon"></i>
-											Penyebaran Penyakit
-										</h2>
-										<br>
-										<div class="extra content" style="text-align:center;">
-											<button class="ui inverted basic button">Selengkapnya</button>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="four wide computer sixteen wide phone column">
-								<div class="ui centered card" id="card-pelikan">
-									<div class="content">
-										<h2 class="ui center aligned icon header" style="color:white;">
-											<i class="comments outline icon"></i>
-											Kritik & Saran
-										</h2>
-										<br>
-										<div class="extra content" style="text-align:center;">
-											<button class="ui inverted basic button">Selengkapnya</button>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="four wide computer sixteen wide phone column">
-								<div class="ui centered card" id="card-pelikan">
-									
-									<div class="content">
-										<h2 class="ui center aligned icon header" style="color:white;">
-											<i class="share alternate icon"></i>
-											Berbagi Zona Rawan
-										</h2>
-										<br>
-										<div class="extra content" style="text-align:center;">
-											<button class="ui inverted basic button">Selengkapnya</button>
-										</div>
-									</div>
-								</div>
+
+	<div class="section-one">
+		<div class="ui container centered grid">
+			<div class="row">
+				<div class="sixteen wide computer sixteen wide phone center aligned column">
+					<div class="large-title">
+						<p>Kenapa harus pelikan ?</p>
+					</div>
+				</div>
+			</div>
+			<div class="padding-pelikan2"></div>
+			<div class="padding-pelikan"></div> 
+			<div class="row">
+				<div class="four wide computer sixteen wide phone column">
+					<div class="ui centered card" id="card-pelikan">
+						<div class="content">
+							<h2 class="ui center aligned icon header" style="color:white;">
+								<i class="map marker alternate icon"></i>
+								Dapatkan Lokasi
+							</h2>
+							<br>
+							<div class="extra content" style="text-align:center;">
+								<button class="ui inverted basic button">Selengkapnya</button>
 							</div>
 						</div>
 					</div>
 				</div>
-<!-- 			</div>
+				<div class="four wide computer sixteen wide phone column">
+					<div class="ui centered card" id="card-pelikan">
+						<div class="content">
+							<h2 class="ui center aligned icon header" style="color:white;">
+								<i class="user md icon"></i>
+								Penyebaran Penyakit
+							</h2>
+							<br>
+							<div class="extra content" style="text-align:center;">
+								<button class="ui inverted basic button">Selengkapnya</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="four wide computer sixteen wide phone column">
+					<div class="ui centered card" id="card-pelikan">
+						<div class="content">
+							<h2 class="ui center aligned icon header" style="color:white;">
+								<i class="comments outline icon"></i>
+								Kritik & Saran
+							</h2>
+							<br>
+							<div class="extra content" style="text-align:center;">
+								<button class="ui inverted basic button">Selengkapnya</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="four wide computer sixteen wide phone column">
+					<div class="ui centered card" id="card-pelikan">
+						
+						<div class="content">
+							<h2 class="ui center aligned icon header" style="color:white;">
+								<i class="share alternate icon"></i>
+								Berbagi Zona Rawan
+							</h2>
+							<br>
+							<div class="extra content" style="text-align:center;">
+								<button class="ui inverted basic button">Selengkapnya</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-	</div> -->
-	<!-- <div id="backshape">
-	  		<div class="wrapper"> -->
+	</div>
+
 			<div class="padding-pelikan"></div>
 			<div class="padding-pelikan"></div>
 			<div class="ui container centered grid">
@@ -334,39 +322,72 @@
 				</div>
 				<div class="padding-pelikan"></div>
 				<div class="row">
+					
 					<div class="five wide computer sixteen wide phone column">
-						<table>
-							<tr>
-								<td width="50%" style="text-align: center;" class="ui small image"><img src="assets/images/image.png" alt=""></td>
-								<td width="50%" style="text-align: right;"><span style="font-size: 60px;">80%</span></td>
-							</tr>
-							<tr>
-								<td colspan="2" class="justify-pelikan">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, beatae?</td>
-							</tr>
-						</table>
+						<div class="ui link cards">
+						  <div class="grey card">
+						    <div class="content">
+								<div class="ui grid">
+									<div class="row">
+										<div class="eight wide computer left aligned column">
+											<p><i class="material-icons">time_to_leave</i></p>
+										</div>
+										<div class="eight wide computer right aligned column">
+											<p style="font-size: 50px; font-weight: bolder;">80%</p>
+										</div>
+										<div class="sixteen wide computer justify-pelikan column">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, similique?
+										</div>
+									</div>
+								</div>
+						    </div>
+						  </div>
+						</div>
 					</div>
 					<div class="five wide computer sixteen wide phone column">
-						<table>
-							<tr>
-								<td width="50%" style="text-align: center;" class="ui small image"><img src="assets/images/image.png" alt=""></td>
-								<td width="50%" style="text-align: right;"><span style="font-size: 60px;">80%</span></td>
-							</tr>
-							<tr>
-								<td colspan="2" class="justify-pelikan">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, beatae?</td>
-							</tr>
-						</table>
+						<div class="ui link cards">
+						  <div class="grey card">
+						    <div class="content">
+								<div class="ui grid">
+									<div class="row">
+										<div class="eight wide computer left aligned column">
+											<p><i class="material-icons">time_to_leave</i></p>
+										</div>
+										<div class="eight wide computer right aligned column">
+											<p style="font-size: 50px; font-weight: bolder;">80%</p>
+										</div>
+										<div class="sixteen wide computer justify-pelikan column">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, similique?
+										</div>
+									</div>
+								</div>
+						    </div>
+						  </div>
+						</div>
 					</div>
 					<div class="five wide computer sixteen wide phone column">
-						<table>
-							<tr>
-								<td width="50%" style="text-align: center;" class="ui small image"><img src="assets/images/image.png" alt=""></td>
-								<td width="50%" style="text-align: right;"><span style="font-size: 60px;">80%</span></td>
-							</tr>
-							<tr>
-								<td colspan="2" class="justify-pelikan">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, beatae?</td>
-							</tr>
-						</table>
+						<div class="ui link cards">
+						  <div class="grey card">
+						    <div class="content">
+								<div class="ui grid">
+									<div class="row">
+										<div class="eight wide computer left aligned column">
+											<p><i class="material-icons">time_to_leave</i></p>
+										</div>
+										<div class="eight wide computer right aligned column">
+											<p style="font-size: 50px; font-weight: bolder;">80%</p>
+										</div>
+										<div class="sixteen wide computer justify-pelikan column">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, similique?
+										</div>
+									</div>
+								</div>
+						    </div>
+						  </div>
+						</div>
 					</div>
+					
+					
 				</div>
 				<div class="padding-pelikan"></div>
 				<div class="row">
@@ -394,8 +415,6 @@
 				</div>
 			</div>
 			<div class="padding-pelikan"></div>
-  		<!-- </div>
-  		  	</div> -->
   	<div class="section-two">
   		<div class="padding-pelikan"></div>
   		<div class="ui container centered grid">
@@ -428,7 +447,6 @@
 		</div>
 	</div>
 </body>
-</body>
 <script src="<?= base_url('assets/') ?>js/jquery.min.js"></script>
 <script src="<?= base_url('assets/') ?>semantic/semantic.min.js"></script>
 <script src="<?= base_url('assets/') ?>canvasjs/canvasjs.min.js"></script>
@@ -457,10 +475,41 @@ var chart = new CanvasJS.Chart("chartContainer", {
 	}]
 });
 chart.render();
-</script>
+/*BEGIN RESPONSIVE MENU ANIMATION*/
+$(document).ready(function(){
+    $("#showmenu").click(function(){
+        $('.menukiri.lipat .menu')
+		  .transition({
+		  	animation : 'swing right',
+		    duration  : 1200
+		  })
+		;
+		$('#menukiri').removeClass('hidden');
+    });
+    $("#hidemenu").click(function(){
+    	$('#menukiri').removeClass('hidden');
+        $('.menukiri.lipat .menu')
+		  .transition({
+		  	animation : 'fade',
+		    duration  : 1200
+		  });
+    });
+});
 
+
+
+/*END RESPONSIVE MENU ANIMATION*/
+</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
+
+	$(window).scroll(function(){
+		if($(window).scrollTop()){
+			$('.navbar_coy').attr("id","nav-pelikan_hijau");
+		}else{
+			$('.navbar_coy').attr("id","nav-pelikan");
+		}
+	});
 
   var markers = [];
   var map = "";
