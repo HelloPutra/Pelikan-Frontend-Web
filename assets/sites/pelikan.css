@@ -1,0 +1,182 @@
+html, body{
+    margin: 0;
+    height: 100%;
+}
+#nav-pelikan{
+	font-family: 'Sansita', sans-serif;
+	background-color: transparent;
+	font-size: 30px;
+	border-bottom:0px;
+	box-shadow:none;
+	transition:0.3s ease-out;
+}
+#nav-pelikan_black{
+	font-family: 'Sansita', sans-serif;
+	background-color: rgba(0,0,0,0.6);
+	font-size: 30px;
+	border-bottom: 0px;
+	transition:0.5s ease-in-out;
+}
+.nav-font{
+	font-family: 'Kaushan Script', sans-serif;
+}
+#nav-pelikan > a.item{
+	color: #FFF;
+}
+#nav-pelikan_black > a.item{
+	color:#FFF;
+}
+#mobile-nav{
+	background-color: #00b894;
+}
+#mobile-nav>a.item{
+	color: #FFF;
+}
+.hidden{ 
+	display: none;
+}
+#hero{
+	margin-top: -30px;
+	background: url('../images/hero.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 700px;
+	width: 100%;
+	display: table;
+}
+.valign-middle{
+   display: table-cell;
+   vertical-align: middle;
+}
+.big-title{
+	font-family: 'Kaushan Script', sans-serif;
+	color: #FFF;
+	font-size: 100px;
+}
+.hero-content-pelikan{
+	font-family: 'Roboto', sans-serif;
+	color: #FFF;
+	font-size: 25px;
+}
+p#line-height{
+	line-height: 1.2;
+}
+button#btn-pelikan{
+	font-family: 'PT Sans', sans-serif;
+	color: #FFF;
+	font-size: 20px;
+}
+.section-one{
+	background-color: #00cca4;
+	padding-bottom: 80px;
+	padding-top: 80px;
+	background-size:cover;
+}
+.large-title{
+	font-family: 'Sansita', sans-serif;
+	color: #FFF;
+	font-size: 40px;
+}
+.large-title-black{
+	font-family: 'Sansita', sans-serif;
+	color: #000;
+	font-size: 40px;
+}
+.normal-title{
+	font-family: 'Sansita', sans-serif;
+	color: #FFF;
+	font-size: 30px;
+}
+.content-pelikan{
+	font-family: 'PT Sans', sans-serif;
+	color: #FFF;
+	font-size: 20px;
+}
+.content-pelikan-black{
+	font-family: 'PT Sans', sans-serif;
+	color: #000;
+	font-size: 20px;
+}
+.content-pelikan-white{
+	font-family: 'PT Sans', sans-serif;
+	color: #FFF;
+	font-size: 20px;
+}
+.padding-pelikan{
+	padding-top: 50px;
+}
+.padding-pelikan2{
+	padding-top: 15px;
+}
+.justify-pelikan{
+	text-align: justify;
+}
+#card-pelikan{
+	background-color: #00cca4;
+	height: 250px;
+}
+#card-zat{
+	height: 300px;
+	max-height: 300px;
+    padding-top: 30px;
+}
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:75%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    width:100%;
+    position:absolute;
+}
+.light-footer{
+	background-color: #00cca4;
+}
+.f15-pelikan{
+	font-size: 15px;
+	color: #FFF;
+}
+.dark-footer{
+	background-color: #00b894;
+}
+.material-icons{
+	font-size: 70px;
+}
+img.logo{
+	width: 55px;
+	height: 60px;
+}
+#kaushan-font-logo{
+	font-family: 'Kaushan Script', sans-serif;
+	font-size: 25px;
+}
+.side-menu-font-logo{
+	margin-left: 10px;
+	font-family: 'Kaushan Script', sans-serif;
+	font-size: 20px;
+}
+.center-align-pelikan{
+	text-align: center;
+}
+.black-rgba-style{
+	background-color: rgba(0,0,0,0.5);
+}
+.kaushan-style{
+	font-family: 'Kaushan Script', sans-serif;
+}
+#white-color{
+	color:white;
+}
+.percent-style{
+	font-size: 50px;
+	font-weight: bolder;
+}
+#btn-pelikan-article{
+    width: 100%;
+    background-color: #00cca4;
+    color: #FFF;
+}
